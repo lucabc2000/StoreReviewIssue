@@ -1,0 +1,17 @@
+Overview
+This project was initiated using Expo and has integrated the expo-store-review module to prompt users for app reviews directly within the app interface. The functionality is triggered through a button in the app.
+
+Implementation Steps
+Project Initialization: The project was started using Expo for streamlined setup and development.
+
+Installation of StoreReview: The expo-store-review module was installed to leverage the native store review functionality available on iOS and Android platforms.
+
+App.js Configuration:
+
+A button was implemented in App.js to trigger the StoreReview.requestReview() method. This method is supposed to ask for a review in a modal window when the user interacts with the button.
+
+Observed Behavior
+
+iOS Devices: On iOS, the StoreReview.requestReview() method works as expected. When the button is pressed, the review request modal appears, allowing users to submit a review without leaving the app.
+
+Android Devices: Contrary to iOS, the review request modal does not appear on Android devices. This inconsistency was noted despite the app being tested in a similar environment and under similar conditions on both platforms.
